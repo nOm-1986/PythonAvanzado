@@ -12,7 +12,7 @@ def make_repeater_of(n: int):
 
 
 def make_division_by(divisor: int):
-    assert type(divisor) == int, "You have to add an int number"
+    assert type(divisor) != int, "You have to add an int number"
     def make_dividendo(dividendo: int) -> int:
         #return int(dividendo / divisor)
         return dividendo // divisor #Recuerda que la // me devuelve solo en int
