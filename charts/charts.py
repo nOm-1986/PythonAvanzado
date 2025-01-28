@@ -9,5 +9,3 @@ def generate_pie_chart():
     pylot.savefig('./pie_chart.png')
     pylot.close()
 
-if __name__ == '__main__':
-    generate_pie_chart()
