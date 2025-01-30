@@ -25,7 +25,10 @@ def generate_chart(labels, data, name):
 def run():
     data = read_csv(FILE_URL)
     select_country = input('Ingresa un continente: \n')
-    filtro = list(filter(lambda x: x['Continent'] == select_country, data))
+    try:
+        filtro = list(filter(lambda x: x['Continent'] == select_country, data))
+    except Exception as e:
+        print(e)
     lab = list(map(lambda x: x['Country/Territory'], filtro))
     per = list(map(lambda x: x['World Population Percentage'], filtro))
     generate_chart(lab, per, select_country)
