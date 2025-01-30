@@ -1,4 +1,5 @@
 import matplotlib.pyplot as pylot
+import matplotlib.animation as animation
 import random as r
 
 def generate_pie_chart():
